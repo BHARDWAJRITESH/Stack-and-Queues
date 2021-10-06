@@ -18,6 +18,10 @@ public class MyStackTest {
         myStack.printStack();
         INode peak= myStack.peak();
         Assert.assertEquals(myThirdNode,peak);
+        
+        INode pop = myStack.pop();
+        myStack.printStack();
+        Assert.assertEquals(myThirdNode,pop);
 
     }
 }
